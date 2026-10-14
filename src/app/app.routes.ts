@@ -4,6 +4,7 @@ import { Acerca } from './acerca/acerca';
 import { S03 } from './s03/s03';
 import { Taller02 } from './s03/taller02';
 import { Pedido } from './taller03/pedido';
+import { Inventario } from './parcial1/inventario';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'tablero', pathMatch: 'full' },
@@ -12,5 +13,6 @@ export const routes: Routes = [
   { path: 'acerca', component: Acerca },
   { path: 'taller02', component: Taller02 },
   { path: 'taller03', component: Pedido },
+  { path: 'parcial1', component: Inventario },
   { path: '**', redirectTo: 'tablero' } // <--- Debe ir ANTES del comodín **
 ];
